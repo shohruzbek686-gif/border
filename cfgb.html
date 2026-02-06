@@ -1,208 +1,253 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MiniUI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniUI</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-<style>
-    body{
-        font-family: Arial, sans-serif;
-        background:#f4f6f8;
-        margin:0;
-        padding:30px;
-        color:#333;
-    }
+body {
+    background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
 
-    header, main, footer{
-        max-width:900px;
-        margin:0 auto;
-    }
+/* NAVBAR */
+.nav {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
 
-    header{
-        text-align:center;
-        margin-bottom:40px;
-    }
-    header span{
-        border:1px solid #ccc;
-        padding:6px 18px;
-        border-radius:20px;
-        margin-left:15px;
-        cursor:pointer;
-        transition:0.3s;
-    }
-    header span:hover{
-        background:#000;
-        color:#fff;
-    }
+.nav h2 {
+    display: inline-block;
+}
 
-    /* PROFILE CARD */
-    .card{
-        background:#fff;
-        border:1px solid #e5e5e5;
-        border-radius:15px;
-        padding:30px;
-        margin-bottom:50px;
-        box-shadow:0 5px 15px rgba(0,0,0,0.05);
-    }
-    .avatar{
-        width:60px;
-        height:60px;
-        border-radius:50%;
-        border:2px solid #000;
-        text-align:center;
-        line-height:60px;
-        font-weight:bold;
-        margin-bottom:10px;
-    }
-    .tags span{
-        border:1px solid #ddd;
-        padding:5px 12px;
-        border-radius:20px;
-        font-size:12px;
-        margin-right:6px;
-    }
+.nav-links {
+    float: right;
+}
 
-    .btn{
-        display:inline-block;
-        padding:10px 22px;
-        border-radius:8px;
-        margin-top:15px;
-        cursor:pointer;
-        font-weight:bold;
-        border:1px solid #ccc;
-    }
-    .btn-dark{
-        background:#000;
-        color:#fff;
-        border:none;
-    }
+.nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
 
-    /* PRICING */
-    .pricing-container{
-        text-align:center;
-        margin-top:20px;
-    }
+.btn-outline {
+    padding: 6px 12px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 6px;
+}
 
-    .plan{
-        display:inline-block;
-        vertical-align:top;
-        width:30%;
-        margin:1%;
-        padding:25px;
-        background:#fff;
-        border:1px solid #e5e5e5;
-        border-radius:12px;
-        box-shadow:0 5px 15px rgba(0,0,0,0.04);
-        box-sizing:border-box;
-        transition:0.3s;
-    }
-    .plan:hover{
-        transform:translateY(-6px);
-    }
+/* CONTAINER */
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
 
-    ul{
-        list-style:none;
-        padding:0;
-        color:#666;
-        font-size:14px;
-    }
-    li{ margin:10px 0; }
+.hint {
+    color: gray;
+    font-size: 14px;
+}
 
-    .choose{
-        border:1px solid #ccc;
-        padding:10px;
-        border-radius:8px;
-        margin-top:20px;
-        cursor:pointer;
-        font-weight:bold;
-    }
-    .choose.dark{
-        background:#000;
-        color:#fff;
-        border:none;
-    }
+/* PROFILE CARD */
+.profile-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
 
-    footer{
-        margin-top:40px;
-        padding:15px;
-        background:#fff;
-        border:1px solid #eee;
-        border-radius:10px;
-        font-size:14px;
-    }
-</style>
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.profile-info {
+    display: inline-block;
+    width: 80%;
+    margin-left: 15px;
+}
+
+.role {
+    font-weight: bold;
+}
+
+.desc {
+    color: gray;
+}
+
+.tags span {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.actions {
+    margin-top: 15px;
+}
+
+.btn-dark {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.btn-light {
+    background: white;
+    border: 1px solid black;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.actions button {
+    margin-right: 10px;
+}
+
+/* PRICING */
+.pricing {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card {
+    width: 28%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.card h2 span {
+    font-size: 14px;
+    color: gray;
+}
+
+.card ul {
+    padding-left: 20px;
+    color: gray;
+}
+
+.full {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.active {
+    border: 2px solid black;
+}
+
+/* TIP */
+.tip {
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+    </style>
 </head>
-
 <body>
 
-<header>
-    <h2>MiniUI</h2>
-    <p>Profile • Pricing <span>Get started</span></p>
-</header>
+    <header class="nav">
+        <h2>MiniUI</h2>
+        <div class="nav-links">
+            <a href="#">Profile</a>
+            <a href="#">Pricing</a>
+            <button class="btn-outline">Get Started</button>
+        </div>
+    </header>
 
-<main>
-    <h2>Profile Card</h2>
+    <section class="container">
+        <h3>Profile Card</h3>
+        <p class="hint">Box model • border • display • center</p>
 
-    <div class="card">
-        <div class="avatar">A</div>
-        <h3>Akmal DevOps</h3>
-        <p><b>Backend & DevOps Engineer</b></p>
-        <p>Bu sahifa faqat box-model va display bilan tuzilgan</p>
+        <div class="profile-card">
+            <div class="avatar">A</div>
+            <div class="profile-info">
+                <h4>Akmal DevOps</h4>
+                <p class="role">Backend & DevOps Engineer</p>
+                <p class="desc">Bu sahifa faqat box-model va display mavzulari bilan tuzilgan.</p>
 
-        <div class="tags">
-            <span>B2-C1 English</span>
-            <span>EPAM</span>
-            <span>Linux</span>
+                <div class="tags">
+                    <span>B2 — C1 English</span>
+                    <span>EPAM</span>
+                    <span>Linux</span>
+                </div>
+
+                <div class="actions">
+                    <button class="btn-dark">View Plans</button>
+                    <button class="btn-light">Contact</button>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <span class="btn btn-dark">View plans</span>
-            <span class="btn">Contact</span>
+        <h3>Pricing Cards</h3>
+        <p class="hint">display inline-block • width • margin</p>
+
+        <div class="pricing">
+            <div class="card">
+                <h4>Starter</h4>
+                <h2>$9 <span>/mo</span></h2>
+                <ul>
+                    <li>1 Project</li>
+                    <li>Basic Support</li>
+                    <li>Community Access</li>
+                </ul>
+                <button class="btn-light full">Choose Starter</button>
+            </div>
+
+            <div class="card active">
+                <h4>Pro</h4>
+                <h2>$19 <span>/mo</span></h2>
+                <ul>
+                    <li>10 Projects</li>
+                    <li>Priority Support</li>
+                    <li>Private Templates</li>
+                </ul>
+                <button class="btn-dark full">Choose Pro</button>
+            </div>
+
+            <div class="card">
+                <h4>Team</h4>
+                <h2>$39 <span>/mo</span></h2>
+                <ul>
+                    <li>Unlimited Projects</li>
+                    <li>Team Roles</li>
+                    <li>SLA Support</li>
+                </ul>
+                <button class="btn-light full">Choose Team</button>
+            </div>
         </div>
-    </div>
 
-    <h2>Pricing Cards</h2>
-
-    <div class="pricing-container">
-        <div class="plan">
-            <h4>Starter</h4>
-            <h1>$9 <small>/mo</small></h1>
-            <ul>
-                <li>1 Project</li>
-                <li>Basic Support</li>
-                <li>Community Access</li>
-            </ul>
-            <div class="choose">Choose Starter</div>
+        <div class="tip">
+            Tip: bu layout faqat <b>inline-block, margin, width</b> bilan qilingan.
         </div>
-
-        <div class="plan">
-            <h4>Pro</h4>
-            <h1>$19 <small>/mo</small></h1>
-            <ul>
-                <li>10 Projects</li>
-                <li>Priority Support</li>
-                <li>Private Templates</li>
-            </ul>
-            <div class="choose dark">Choose Pro</div>
-        </div>
-
-        <div class="plan">
-            <h4>Team</h4>
-            <h1>$39 <small>/mo</small></h1>
-            <ul>
-                <li>Unlimited Projects</li>
-                <li>Team Roles</li>
-                <li>SLA Support</li>
-            </ul>
-            <div class="choose">Choose Team</div>
-        </div>
-    </div>
-</main>
-
-<footer>
-    Tip: Layout faqat inline-block, margin va width bilan qilingan
-</footer>
+    </section>
 
 </body>
 </html>
