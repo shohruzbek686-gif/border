@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MiniUI</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#f4f6f8;
+        margin:0;
+        padding:30px;
+        color:#333;
+    }
+
+    header, main, footer{
+        max-width:900px;
+        margin:0 auto;
+    }
+
+    header{
+        text-align:center;
+        margin-bottom:40px;
+    }
+    header span{
+        border:1px solid #ccc;
+        padding:6px 18px;
+        border-radius:20px;
+        margin-left:15px;
+        cursor:pointer;
+        transition:0.3s;
+    }
+    header span:hover{
+        background:#000;
+        color:#fff;
+    }
+
+    /* PROFILE CARD */
+    .card{
+        background:#fff;
+        border:1px solid #e5e5e5;
+        border-radius:15px;
+        padding:30px;
+        margin-bottom:50px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    }
+    .avatar{
+        width:60px;
+        height:60px;
+        border-radius:50%;
+        border:2px solid #000;
+        text-align:center;
+        line-height:60px;
+        font-weight:bold;
+        margin-bottom:10px;
+    }
+    .tags span{
+        border:1px solid #ddd;
+        padding:5px 12px;
+        border-radius:20px;
+        font-size:12px;
+        margin-right:6px;
+    }
+
+    .btn{
+        display:inline-block;
+        padding:10px 22px;
+        border-radius:8px;
+        margin-top:15px;
+        cursor:pointer;
+        font-weight:bold;
+        border:1px solid #ccc;
+    }
+    .btn-dark{
+        background:#000;
+        color:#fff;
+        border:none;
+    }
+
+    /* PRICING */
+    .pricing-container{
+        text-align:center;
+        margin-top:20px;
+    }
+
+    .plan{
+        display:inline-block;
+        vertical-align:top;
+        width:30%;
+        margin:1%;
+        padding:25px;
+        background:#fff;
+        border:1px solid #e5e5e5;
+        border-radius:12px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.04);
+        box-sizing:border-box;
+        transition:0.3s;
+    }
+    .plan:hover{
+        transform:translateY(-6px);
+    }
+
+    ul{
+        list-style:none;
+        padding:0;
+        color:#666;
+        font-size:14px;
+    }
+    li{ margin:10px 0; }
+
+    .choose{
+        border:1px solid #ccc;
+        padding:10px;
+        border-radius:8px;
+        margin-top:20px;
+        cursor:pointer;
+        font-weight:bold;
+    }
+    .choose.dark{
+        background:#000;
+        color:#fff;
+        border:none;
+    }
+
+    footer{
+        margin-top:40px;
+        padding:15px;
+        background:#fff;
+        border:1px solid #eee;
+        border-radius:10px;
+        font-size:14px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>MiniUI</h2>
+    <p>Profile • Pricing <span>Get started</span></p>
+</header>
+
+<main>
+    <h2>Profile Card</h2>
+
+    <div class="card">
+        <div class="avatar">A</div>
+        <h3>Akmal DevOps</h3>
+        <p><b>Backend & DevOps Engineer</b></p>
+        <p>Bu sahifa faqat box-model va display bilan tuzilgan</p>
+
+        <div class="tags">
+            <span>B2-C1 English</span>
+            <span>EPAM</span>
+            <span>Linux</span>
+        </div>
+
+        <div>
+            <span class="btn btn-dark">View plans</span>
+            <span class="btn">Contact</span>
+        </div>
+    </div>
+
+    <h2>Pricing Cards</h2>
+
+    <div class="pricing-container">
+        <div class="plan">
+            <h4>Starter</h4>
+            <h1>$9 <small>/mo</small></h1>
+            <ul>
+                <li>1 Project</li>
+                <li>Basic Support</li>
+                <li>Community Access</li>
+            </ul>
+            <div class="choose">Choose Starter</div>
+        </div>
+
+        <div class="plan">
+            <h4>Pro</h4>
+            <h1>$19 <small>/mo</small></h1>
+            <ul>
+                <li>10 Projects</li>
+                <li>Priority Support</li>
+                <li>Private Templates</li>
+            </ul>
+            <div class="choose dark">Choose Pro</div>
+        </div>
+
+        <div class="plan">
+            <h4>Team</h4>
+            <h1>$39 <small>/mo</small></h1>
+            <ul>
+                <li>Unlimited Projects</li>
+                <li>Team Roles</li>
+                <li>SLA Support</li>
+            </ul>
+            <div class="choose">Choose Team</div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    Tip: Layout faqat inline-block, margin va width bilan qilingan
+</footer>
+
+</body>
+</html>
