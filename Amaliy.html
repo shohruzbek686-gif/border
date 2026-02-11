@@ -13,19 +13,15 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-body{
-    background:rgba(243, 243, 241, 0.34);
-    padding:30px;
-}
-
 #hint-text{
     color:gray;
+    margin-left:22px ;
+    margin-top: 5px;
 }
 
 .nav{
-    width:1000px;
-    margin:auto;
-    overflow: hidden;
+    width: 100%;
+    margin: 0 ;
 }
 .nav{
     padding-left: 10px;     
@@ -153,11 +149,13 @@ ul{
 }
 
 footer{
-    margin-top:25px;
+    margin-top:205px;
     background:white;
     padding:15px;
     border-radius:10px;
-    border:1px solid black;
+    border:1px solid;
+    margin: 0 auto;
+    width: 1030px;
 }
 
 header{
@@ -166,10 +164,20 @@ header{
     padding:10px 8px;
     background-color: white;
 }
+
+.boshlanish{
+    width: 100%;
+    margin: 0 ;
+    padding: 5px;
+    margin-left:700px;
+}
+.contener{
+    background-color: rgba(230, 230, 230, 0.721);
+}
 </style>
 </head>
     <body>
-
+<div class="boshlanish">
     <header class="nav">
     <h2>MiniUI</h2>
     <div class="nav-links">
@@ -178,7 +186,8 @@ header{
         <a href="https://github.com/" class="btn-outline">Get Started</a>
     </div>
     </header>
-
+    </div>
+<div class="contener">
     <div class="container">
     <h2>Profile Card</h2>
      <p id="hint-text">Box model  border  display  center</p>
@@ -235,6 +244,7 @@ header{
             </ul>
             <button class="full">Choose Team</button>
         </div>
+    </div>
     </div>
     <footer>
             <p>Tip: bu layout faqat inline-block, margin va width bilan qilingan</p>
