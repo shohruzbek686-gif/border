@@ -15,34 +15,33 @@
 
 #hint-text{
     color:gray;
-    margin-left:22px ;
-    margin-top: 5px;
 }
 
-.nav{
-    width: 100%;
-    margin: 0 ;
-}
-.nav{
-    padding-left: 10px;     
+.h2{
+    display:inline-block;
 }
 .nav-links{
     margin-top:5px;
 }
-.nav-links a{
-    text-decoration:none;
+.nav-links {
     color:black;
-    margin-left:25px;
+    margin-left: 717px;
+    text-decoration: none;   
+   
 }
-h2{
-    color:black;
-    margin-left:25px;
+a{
+    color: black;
+    text-decoration: none;
+}
+.miniui{
+    margin-left: 717px;
 }
 .btn-outline{
     border:1px solid black;
     padding:6px 14px;
     border-radius:8px;
 }
+
 .container{
     width:1000px;
     margin:40px auto;
@@ -89,17 +88,16 @@ h2{
 .actions{
     margin-top:15px;
 }
-#view-plans{
+ #contact{
     display:inline-block;
-    background:black;
-    color:white;          
+    background:white;
     border:1px solid black;
     padding:10px 20px;
     border-radius:10px;
     font-weight:bold;
     margin-right:10px;
 }
- #contact{
+#viewplans{
     display:inline-block;
     background:white;
     border:1px solid black;
@@ -129,11 +127,13 @@ h2{
 .card h3{
     margin-bottom:10px;
 }
-
-ul{
+.card ul{
     padding-left:18px;
+    color:gray;
     margin:10px 0;
 }
+
+
 .full{
     width:260px;
     padding:10px;
@@ -149,48 +149,42 @@ ul{
 }
 
 footer{
-    margin-top:205px;
-    background:white;
+    margin-top:25px;
+    background-color: whitesmoke;
     padding:15px;
-    border-radius:10px;
-    border:1px solid;
-    margin: 0 auto;
-    width: 1030px;
+    border-radius:5px;
+    border: 2px solid whitesmoke;
+
 }
 
 header{
-    width:1000px;
+    width:100%;
     margin:0 auto;
     padding:10px 8px;
-    background-color: white;
-}
-
-.boshlanish{
-    width: 100%;
-    margin: 0 ;
-    padding: 5px;
-    margin-left:700px;
-}
-.contener{
-    background-color: rgba(230, 230, 230, 0.721);
+    background-color: whitesmoke;
+    display:inline-block;
+    margin:auto;
+    overflow:hidden;
+   
 }
 </style>
 </head>
-    <body>
-<div class="boshlanish">
-    <header class="nav">
-    <h2>MiniUI</h2>
+
+<body>
+
+<header>
+    <h2 class="miniui">MiniUI</h2>
     <div class="nav-links">
-        <a href="https://github.com/">Profile</a>
-        <a href="https://github.com/">Pricing</a>
-        <a href="https://github.com/" class="btn-outline">Get Started</a>
+        <a href="#">Profile</a>
+        <a href="#">Pricing</a>
+        <a href="#" class="btn-outline">Get Started</a>
     </div>
-    </header>
-    </div>
-<div class="contener">
-    <div class="container">
+</header>
+
+<div class="container">
+
     <h2>Profile Card</h2>
-     <p id="hint-text">Box model  border  display  center</p>
+    <p id="hint-text">Box model  border  display  center</p>
 
     <div class="profile-card">
         <div class="avatar">A</div>
@@ -212,12 +206,12 @@ header{
         </div>
     </div>
 
-        <div class="pricing">
+    <div class="pricing">
         <h2>Pricing Cards</h2>
         <p id="hint-text">display inline-block  width  margin</p>
 
         <div class="card">
-            <h3>Starter <br> $9 /mo</h3>
+            <h3>Starter  $9 /mo</h3>
             <ul>
                 <li>1 Project</li>
                 <li>Basic Support</li>
@@ -225,8 +219,8 @@ header{
             </ul>
             <button class="full">Choose Starter</button>
         </div>
-        <div class="card active">
-            <h3>Pro <br> $19 /mo</h3>
+<div class="card active">
+            <h3>Pro  $19 /mo</h3>
             <ul>
                 <li>10 Projects</li>
                 <li>Priority Support</li>
@@ -236,7 +230,7 @@ header{
         </div>
 
         <div class="card">
-            <h3>Team  <br> $39 /mo</h3>
+            <h3>Team  $39 /mo</h3>
             <ul>
                 <li>Unlimited Projects</li>
                 <li>Team Roles</li>
@@ -245,10 +239,12 @@ header{
             <button class="full">Choose Team</button>
         </div>
     </div>
-    </div>
+
     <footer>
-            <p>Tip: bu layout faqat inline-block, margin va width bilan qilingan</p>
+        Tip: bu layout faqat inline-block, margin va width bilan qilingan
     </footer>
+
 </div>
+
 </body>
 </html>
