@@ -1,87 +1,162 @@
 *{
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-       }
-        header, main {
-            width: 900px;
-            margin: 0 auto;
-         
-        }
-          header {
-            text-align: center ;
-            margin-bottom: 60px;
-            background-color: white;
-            width: 1300px;
-        }
-        body{
-            font-family: Arial, sans-serif;
-            background-color: aliceblue;
-            width: 1300px;
-        }
-        .avatar{
-           
-        width:50px;
-        height:50px;
-        border-radius:50%;
-        border:2px solid black;
-        background-color: white;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        text-align:center;
-        line-height:50px;
-        font-weight:bold;
-        }
-        .Akmal {
-            border: 15px solid aliceblue;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 20px;
-            margin-right: 5px 0;
-        }
-        
-        .contact{
-            padding: 8px 20px; 
-            border-radius: 8px; 
-            border: 1px solid ;
-        }
-        .choosestarter{
-        width: 200px;
-        height: 30px;
-        text-align: center;
-        border: 2px solid black;
-        border-radius: 40px;
-        }
-        .English{
-        width: 200px;
-        height: 30px;
-        text-align: center;
-        border: 2px solid black;
-        border-radius: 60px;
-        }
-        .chooseteam{
-         width: 200px;
-        height: 30px;
-        text-align: center;
-        border: 2px solid black;
-        border-radius: 40px;
-        }
-        .choosepro{
-        width: 200px;
-        height: 30px;
-        text-align: center;
-        border: 2px solid black;
-        border-radius: 40px;
-        }
-        .Get{
-                      
-            padding: 8px 20px; 
-            border-radius: 8px; 
-            border: 1px solid ;  
-        }
-        .starter{
-            width: 300px;
-            margin: 5px 15px ;
-            font-size: 17px;
-            border: 1px solid black;
-            border-radius: 9px;
-        }
+#hint-text{
+    color:gray;
+}
+
+.h2{
+    display:inline-block;
+}
+.nav-links{
+    margin-top:5px;
+}
+.nav-links {
+    color:black;
+    margin-left: 717px;
+    text-decoration: none;   
+   
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.miniui{
+    margin-left: 717px;
+}
+.btn-outline{
+    border:1px solid black;
+    padding:6px 14px;
+    border-radius:8px;
+}
+
+.container{
+    width:1000px;
+    margin:40px auto;
+}
+
+.profile-card{
+    background:white;
+    border:1px solid lightgray;
+    border-radius:14px;
+    padding:25px;
+    margin-top:15px;
+}
+.avatar{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    border:2px solid black;
+    text-align:center;
+    line-height:65px;
+    font-weight:bold;
+    display:inline-block;
+    vertical-align:top;
+}
+.profile-info{
+    display:inline-block;
+    margin-left:20px;
+    width:820px; 
+}
+.profile-info p{
+    color:gray;
+    margin:5px 0;
+}
+
+.tags span{
+    display:inline-block;
+    border:1px solid lightgray;
+    padding:6px 12px;
+    border-radius:20px;
+    margin-right:8px;
+    margin-top:8px;
+    font-size:12px;
+}
+
+.actions{
+    margin-top:15px;
+}
+ #contact{
+    display:inline-block;
+    background:white;
+    border:1px solid black;
+    padding:10px 20px;
+    border-radius:10px;
+    font-weight:bold;
+    margin-right:10px;
+}
+#view-plans{
+    display:inline-block;
+    background:black;
+    border:1px solid black;
+    padding:10px 20px;
+    border-radius:10px;
+    font-weight:bold;
+    margin-right:10px;
+    color: white;
+}
+
+.pricing{
+    margin-top:40px;
+}
+.card{
+    width:300px;
+    background:white;
+    border:1px solid gray;
+    border-radius:14px;
+    padding:20px;
+    display:inline-block;
+    margin:10px;
+    text-align:left;
+    vertical-align:top;
+}
+.active{
+    border:2px solid black;
+}
+.card h3{
+    margin-bottom:10px;
+}
+.card ul{
+    padding-left:18px;
+    color:gray;
+    margin:10px 0;
+}
+
+
+.full{
+    width:260px;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid black;
+    background:white;
+    margin-top:15px;
+}
+
+.btn-qora{
+    background:black;
+    color:white;
+}
+
+footer{
+    margin-top:25px;
+    background-color: whitesmoke;
+    padding:15px;
+    border-radius:5px;
+    border: 2px solid whitesmoke;
+
+}
+
+header{
+    width:100%;
+    margin:0 auto;
+    padding:10px 8px;
+    background-color: whitesmoke;
+    display:inline-block;
+    margin:auto;
+    overflow:hidden;
+   
+}
